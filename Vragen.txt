@@ -1,0 +1,99 @@
+1. C# / .NET - Memory & Runtime
+
+What is a primary reason to implement the IDisposable interface in a .NET class?
+A) To mark the class as serializable
+B) To allow the class to use LINQ
+C) To ensure unmanaged resources are released deterministically
+D) To avoid boxing of value types
+
+
+2. ASP.NET Core - Dependency Injection
+
+What happens if a service registered with AddScoped() tries to inject a Singleton service that depends on scoped services?
+A) The DI container throws an exception at runtime
+B) It compiles but throws a circular dependency error
+C) It may result in capturing incorrect scoped instances and undefined behavior
+D) Scoped services will override Singleton behavior
+
+
+3. C# - Advanced Language Features
+
+What is the output of the following code?
+
+int? x = null;
+int y = x ?? 5;
+Console.WriteLine(y);
+
+A) NullReferenceException
+B) Compilation error
+C) 5
+D) 0
+
+
+4. T-SQL - Window Functions
+
+Which T-SQL query returns the 2nd highest salary from a table Employees with column Salary?
+A) SELECT TOP 2 Salary FROM Employees ORDER BY Salary DESC
+B) SELECT MAX(Salary) FROM Employees WHERE Salary < (SELECT MAX(Salary) FROM Employees)
+C) SELECT TOP 1 Salary FROM (SELECT TOP 2 Salary FROM Employees ORDER BY Salary DESC) AS Temp ORDER BY Salary ASC
+D) All of the above
+
+
+5. REST APIs - Security
+
+Why is storing a JWT in localStorage discouraged in a browser-based SPA?
+A) It prevents token refresh
+B) It can't be read by JavaScript
+C) It's vulnerable to XSS attacks
+D) It consumes excessive memory
+
+
+6. Git - Rewriting History
+
+What does git cherry-pick do?
+A) Rebases a feature branch onto main
+B) Applies a commit from one branch onto another without merging
+C) Merges two commits into one
+D) Reverts a commit permanently
+
+
+7. C# - Threading & Concurrency
+
+What is a key drawback of using Task.Run() inside an ASP.NET Core controller?
+A) It blocks the thread pool
+B) It improves performance incorrectly
+C) It can cause thread starvation under load
+D) It’s required for all async methods
+
+
+8. OOP - SOLID Principles
+
+Which principle does the following code violate?
+
+public class ReportGenerator {
+    public void GeneratePDF() { /* PDF logic */ }
+    public void GenerateCSV() { /* CSV logic */ }
+}
+
+A) Open/Closed Principle
+B) Liskov Substitution Principle
+C) Single Responsibility Principle
+D) Dependency Inversion Principle
+
+
+9. Design Patterns
+
+Which pattern allows adding behavior to an object dynamically without modifying the class itself?
+A) Strategy
+B) Adapter
+C) Decorator
+D) Proxy
+
+
+10. ASP.NET Core - Middleware Pipeline
+
+In what order should middleware be registered in the ASP.NET Core pipeline for correct behavior?
+A) Logging → Authentication → Routing → Authorization → Endpoint
+B) Routing → Endpoint → Authorization → Authentication
+C) Authentication → Authorization → Routing → Endpoint
+D) Routing → Authorization → Authentication → Endpoint

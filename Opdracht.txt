@@ -1,0 +1,43 @@
+Max separations
+
+You are working in the Data Consistency team of your company. You are allocated a task as follows:
+
+You have a data stream consisting of an equal number of odd and even numbers. 
+You can make separations in the data stream but the number of odd elements should be equal to the number of even elements in both partitions after separation. 
+
+Also, if you make an separation between a number x and number y, then the cost of this operation will be |x-y| coins.
+You are given the following:
+
+An integer N
+An array arr
+An integer K
+
+Find out the maximum number of separations that can be made in the array by spending no more than K coins.
+
+
+Function description
+
+Complete the function Max().This function takes the following 3 parameters and returns the required answer:
+
+N: Represents the size of the data stream
+K: Represents the limit of coins
+arr : Represents the data stream
+
+
+Input format for custom testing
+
+The first line contains the integer N.
+The second line contains integer K.
+The third line contains N integers denoting the data stream.
+
+
+Output format
+
+Return the maximum number of separations that can be made in the array by spending no more than K coins.
+
+
+Constraints
+
+\(2\leq N\leq 100\)
+\(1\leq K \leq100\)
+\(1\leq arr_i\leq 100\)
